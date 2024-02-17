@@ -1,0 +1,9 @@
+extends layout
+
+block main-content
+  h1 Parks 
+  each library in library
+    - let libraryId = library.querySelector("Placemark").textContent; 
+    - let libraryName = library.querySelector("name").textContent;
+    div 
+      a(href=`/library/${libraryId}`) #{libraryName}

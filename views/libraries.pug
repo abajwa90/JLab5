@@ -1,0 +1,12 @@
+extends layout
+
+block main-content
+    //- let libraryId = library.querySelector("id").textContent; 
+    - let libraryName = library.querySelector("name").textContent;
+    - let libraryBranchAddress = library.querySelector("address").textContent;
+    - let libraryPhone = library.querySelector("phoneNumber").textContent;
+    - let libraryDescrip = library.querySelector("description").textContent;
+     h2 #{libraryName}
+        p #{libraryBranchAddress}
+        p #{libraryPhone}
+        p #{libraryDescrip}
